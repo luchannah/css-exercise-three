@@ -1,7 +1,11 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #333;
   font-family: sans-serif;
-  font-size: 10px;
+  font-size: 16px;
 }
 
 .container {
@@ -11,11 +15,63 @@ body {
 
 nav {
   margin: 0 auto;
-  padding: 10px 0 15px 15px;
   position: fixed;
   width: 420px;
 }
 
 .restaurant-list {
-  padding-top: 50px;
+  padding-top: 55px;
+  width: 100%;
 }
+
+.location {
+  background-color: #dedede;
+  border-bottom: 1.5px solid #a3a3a3;
+  width: 100%;
+  display: flex; /* Gets rid of the space display: inline-block has */
+}
+
+.location:hover {
+  background-color: #b3b3b3;
+  transition: background-color .5s;
+}
+
+.arrow-left {
+  background-color: #000000;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 0 4% 4.5%;
+}
+
+.fa.fa-chevron-left {
+  font-size: 20px;
+  padding-top: 5%;
+}
+
+.content {
+  padding: 20px 20px 15px 20px;
+  float: left;
+  width: 80%;
+}
+
+.content h1 {
+  line-height: 10px;
+  font-weight: bold;
+}
+
+.content h3 {
+  line-height: 2.5;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.fa.fa-chevron-right {
+  font-size: 20px;
+  padding: 60% 95%;
+}
+
+.arrow {
+  float: left;
+  width: 10%;
+}
+Change from clone
